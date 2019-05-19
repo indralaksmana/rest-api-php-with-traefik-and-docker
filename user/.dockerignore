@@ -1,0 +1,13 @@
+**/docker-compose
+/app/Console
+docker-compose.yml
+/.github
+.git
+.gitignore
+LICENSE
+VERSION
+readme.md
+docs
+.env
+/.idea
+_config.yml

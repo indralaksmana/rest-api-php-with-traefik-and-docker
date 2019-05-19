@@ -1,0 +1,18 @@
+[mysql]
+default-character-set=utf8mb4
+
+[mysqld]
+skip-host-cache
+skip-name-resolve
+;skip-grant-tables
+
+;; default sql_mode for mysql 5.7
+;sql_mode = ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+
+;; sql_mode to remove group by strict
+sql_mode = STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+;foreign_key_checks = 0
+
+;init-connect='SET NAMES utf8mb4'
+;character-set-server=utf8mb4
+;collation-server=utf8_general_ci
